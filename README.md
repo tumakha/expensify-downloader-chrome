@@ -2,6 +2,11 @@
 
 Chrome extension to download expense reports selected by search on www.expensify.com
 
+### Install from Chrome Web Store
+
+Search for [Expensify Downloader](https://chrome.google.com/webstore/detail/expensify-downloader/kdeadmffaednfopgcacmpijpeoijhgln) 
+and install by the button "Add to Chrome"
+
 ### Install from sources
 
 Install Chrome extension in [Developer Mode](https://developer.chrome.com/extensions/getstarted#manifest)
