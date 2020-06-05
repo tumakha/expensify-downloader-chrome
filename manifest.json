@@ -2,8 +2,10 @@
   "manifest_version": 2,
   "name": "Expensify Downloader",
   "description": "Download expense reports selected by search on www.expensify.com",
-  "version": "0.1",
+  "version": "0.1.1",
+  "minimum_chrome_version": "55",
   "homepage_url": "https://github.com/tumakha/expensify-downloader-chrome",
+  "author": "Yuriy Tumakha",
   "background": {
     "scripts": ["js/background.js"],
     "persistent": false
@@ -13,14 +15,18 @@
     "default_title": "Expensify Downloader"
   },
   "permissions": [
-    "activeTab",
     "tabs",
+    "notifications",
     "https://www.expensify.com/*"
   ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.expensify.com/reports*"],
+      "js": ["js/report-links.js"]
+    }
+  ],
   "icons": {
-    "32": "icons/icon1024.png",
-    "48": "icons/icon1024.png",
-    "128": "icons/icon1024.png",
+    "128": "icons/icon128.png",
     "1024": "icons/icon1024.png"
   }
 }
