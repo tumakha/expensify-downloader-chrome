@@ -1,6 +1,6 @@
 ## Expensify Downloader - Chrome extension 
 
-Chrome extension to download expense reports selected by search on www.expensify.com
+Chrome extension to batch download expense reports selected by search on www.expensify.com
 
 ### Install from Chrome Web Store
 
